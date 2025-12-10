@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Kontak - Kopi Nusantara</title>
+	<script src="script.js"></script>
+	<script type="module" src="js/form.js"></script>
+	<script type="module" src="js/newsletter.js"></script>
+	<link rel="stylesheet" href="style.css" />
+	<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Kopi Nusantara</h1>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  				<div class="container">
+    				<a class="navbar-brand" href="index.html">
+      					<img src="image/logo.jpg" alt="Logo UMKM" width="40" height="40">
+					</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+								data-bs-target="#navbarNav" aria-controls="navbarNav"
+								aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+							<li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li>
+							<li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+							<li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+							<li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+	</header>
+	<main>
+		<h2>Hubungi Kami</h2>
+		<p>Silakan isi formulir berikut untuk menghubungi tim Kopi
+		Nusantara:</p>
+			<form id="formKontak" action="#" method="post">
+				<label for="nama">Nama:</label><br>
+				<input type="text" id="nama" name="nama" />
+				<span class="error" id="errorNama"></span><br><br>
+
+				<label for="email">Email:</label><br>
+				<input type="email" id="email" name="email" />
+				<span class="error" id="errorEmail"></span><br><br>
+
+				<label for="kategori">Kategori Pesan:</label><br>
+					<select id="kategori" name="kategori">
+					<option value="">-- Pilih Kategori --</option>
+					<option value="umum">Umum</option>
+					<option value="produk">Produk</option>
+					<option value="kerjasama">Kerja Sama</option>
+				</select>
+				<span class="error" id="errorKategori"></span><br><br>
+
+				<label for="pesan">Pesan:</label><br>
+				<textarea id="pesan" name="pesan" rows="5" cols="30"></textarea>
+				<span class="error" id="errorPesan"></span><br><br>
+
+				<input type="checkbox" id="langganan" name="langganan" value="ya">
+				<label for="langganan">Saya ingin menerima newsletter</label><br><br>
+
+				<button type="submit">Kirim</button>
+				</form>
+				<main class="py-5">
+					<div class="container">
+						<h2 class="mb-4 text-center">Hubungi Kami</h2>
+						<form id="form-kontak" class="border rounded p-4 bg-light">
+						<div class="mb-3">
+							<label for="nama" class="form-label">Nama</label>
+							<input type="text" class="form-control" id="nama" name="nama" required>
+						</div>
+
+						<div class="mb-3">
+							<label for="email" class="form-label">Email</label>
+							<input type="email" class="form-control" id="email" name="email" required>
+						</div>
+
+						<div class="mb-3">
+							<label for="kategori" class="form-label">Kategori Pesan</label>
+							<select id="kategori" name="kategori" class="form-select">
+							<option value="umum">Umum</option>
+							<option value="produk">Produk</option>
+							<option value="kerjasama">Kerja Sama</option>
+							</select>
+						</div>
+
+						<div class="mb-3">
+							<label for="pesan" class="form-label">Pesan</label>
+							<textarea id="pesan" name="pesan" rows="4" class="form-control"></textarea>
+						</div>
+
+						<div class="form-check mb-3">
+							<input class="form-check-input" type="checkbox" id="langganan" name="langganan">
+							<label class="form-check-label" for="langganan">
+							Saya ingin menerima newsletter
+							</label>
+						</div>
+
+						<button type="submit" class="btn btn-success">Kirim Pesan</button>
+						</form>
+					</div>
+				</main>
+
+
+	</main>
+	<footer class="bg-dark text-light text-center py-3 mt-5">
+  		<div class="container">
+    		<p class="mb-0">&copy; 2025 Nama UMKM Kamu. Semua hak dilindungi.</p>
+  		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    </body>
+    </html>
+</body>
+</html>
